@@ -55,6 +55,12 @@
 - 화살표 함수: 콜백함수, 메서드, 아주 짧은 함수.
 - `function` 함수: 나머지 일반 함수. 호이스팅을 위한 정책.
 
+#### CSS 클래스
+
+- Tailwind CSS 클래스를 조건부로 병합하거나 여러 클래스를 조합할 때는 `cn` 함수를 사용.
+- `cn` 함수는 `src/styles/className.ts`에서 import하여 사용.
+- 예시: `cn("base-class", condition && "conditional-class", className)`
+
 ### 파일 구조
 
 - 한 파일에 한 컴포넌트.

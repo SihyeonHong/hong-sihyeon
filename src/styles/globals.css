@@ -7,10 +7,37 @@
     "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont,
     system-ui, "Roboto", "Segoe UI", "Helvetica Neue", sans-serif;
 
+  /* 라이트/다크 모드 공통 색상 */
+  --color-background: var(--color-background-base);
+  --color-foreground: var(--color-text-primary);
+  --color-header-background: var(--color-header-background-base);
+  --color-button-group-border: var(--color-border-default);
+  --color-button-group-background: var(--color-background-base);
+  --color-button-group-text: var(--color-text-primary);
+  --color-button-group-hover: var(--color-button-hover);
+  --color-button-group-active: var(--color-button-active);
+}
+
+:root {
   /* 라이트 모드 색상 */
-  --color-background: #ffffff; /* white */
-  --color-foreground: #1f2937; /* gray-800 */
-  --color-header-background: #ffffff; /* white */
+  --color-background-base: #ffffff; /* white */
+  --color-text-primary: #1f2937; /* gray-800 */
+  --color-text-secondary: #6b7280; /* gray-500 */
+  --color-header-background-base: #ffffff; /* white */
+  --color-border-default: #e5e7eb; /* gray-200 */
+  --color-button-hover: #f3f4f6; /* gray-100 */
+  --color-button-active: #e5e7eb; /* gray-200 */
+}
+
+.dark {
+  /* 다크 모드 색상 */
+  --color-background-base: #111827; /* gray-900 */
+  --color-text-primary: #f9fafb; /* gray-50 */
+  --color-text-secondary: #9ca3af; /* gray-400 */
+  --color-header-background-base: #111827; /* gray-900 */
+  --color-border-default: #374151; /* gray-700 */
+  --color-button-hover: #1f2937; /* gray-800 */
+  --color-button-active: #374151; /* gray-700 */
 }
 
 body {

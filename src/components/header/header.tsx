@@ -1,10 +1,11 @@
+import ThemeBtn from "@/components/header/theme-btn";
 import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-header-background px-xl py-md shadow-sm">
+    <header className="bg-header-background px-8 py-4 shadow-sm">
       <nav className="flex items-center justify-between">
-        <div className="gap-lg flex">
+        <div className="flex gap-6">
           <Link
             href="/"
             className="text-foreground no-underline hover:underline"
@@ -24,7 +25,7 @@ export default function Header() {
             Blog
           </Link>
         </div>
-        <button type="button">Theme</button>
+        <ThemeBtn />
       </nav>
     </header>
   );
